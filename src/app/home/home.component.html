@@ -1,0 +1,18 @@
+
+
+
+ <div class="container">
+    <div class="row">
+        <div class="col-md-4" *ngFor="let b of books">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <p class="card-title"><b>Book Name:</b>{{b.bookName}}</p>
+                    <img [src]="b.bookImage" alt="{{b.bookName}}" class="img-fluid mb-2" style="width: 100%; height: auto;">
+                    <h5 class="card-text"><b>RS.</b>{{b.bookPrice}}</h5>
+                    <p class="card-text"><b>Description:</b>{{b.bookDescription}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

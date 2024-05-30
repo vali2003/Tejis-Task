@@ -1,0 +1,33 @@
+
+@media only screen and (min-width:700px){
+.container{
+    margin-top: 20px;
+    margin-bottom: 100px;
+    margin-left: 240px;
+    margin-right: 300px;
+    padding: 50px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 1000px;
+    height: 550px;
+    background-color:orange;
+}
+h1{
+    text-align: center;
+    margin-top: 20px;
+}
+.rakhi{
+    color: darkviolet;
+}
+#reg{
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    margin-left: 350px;
+
+}
+button{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+}

@@ -1,0 +1,42 @@
+@media only screen and (min-width:700px){
+    
+
+    .bg-vali{
+        background-color:orange;;
+    }
+    .navbar{
+        width:250px;
+        padding:15px;
+        padding-bottom:500px;
+        position: absolute;
+        left:0px;
+    }
+    .navbar-nav{
+        margin-top:50px;
+    }
+    .nav-item{
+        padding-top: 10px;
+        margin-left: 20px;
+    }
+    .logo{
+        width:120px;
+        border-radius: 60px;
+    }
+    .dash{
+        position: fixed;
+    }
+    .cont{
+        margin-left: 250px;
+    }
+    
+    }
+    
+    @media only screen and (max-width:700px){
+        .bg-vali{
+            background-color:cornflowerblue;;
+        }
+        *{
+            padding:0px;
+            margin:0px;
+        }
+    }

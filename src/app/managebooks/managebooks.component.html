@@ -1,0 +1,77 @@
+
+ 
+
+
+ <div class="container" >
+    <div class="row">
+        <ng-container  *ngFor="let b of books" >
+            <ng-container *ngIf="!b.show">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <img [src]="b.bookImage" class="card-img-top" height="350px">
+                        
+                    </div>
+    
+                    <div class="card-body">
+                        <h4 class="card-title">{{b.bookName}}</h4>
+                        
+                    </div>
+                    <div class="card-footer">
+                        <h6>Author : {{b.bookAuthor}}</h6>
+                        <h6>price : {{b.bookPrice}}</h6>
+                        <p>Description:{{b.bookDescription}}</p>
+                        <br>
+                        
+                        <button class="btn btn-success" (click)="edit(b)">Edit</button>
+                        <p style="display: inline;">&nbsp;&nbsp;&nbsp;</p>
+                        <button class="btn btn-warning" (click)="delete(b)"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                    </div>
+                    </div>
+                    </div>
+                </ng-container>
+
+                <ng-container *ngIf="b.show">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <img [src]="b.image" class="card-img-top" height="350px">
+                                
+                            </div>
+            
+                            <div class="card-body">
+                                <input type="text" class="form-control" name="bookName" [(ngModel)]="b.bookName"  required> 
+                            </div>
+                            <div class="card-footer">
+                                <input type="text" class="form-control" name="author" [(ngModel)]="b.bookAuthor"  required >
+
+                                <input type="text" class="form-control" name="price" [(ngModel)]="b.bookPrice"  required >
+
+                                <input type="text" class="form-control" name="descr" [(ngModel)]="b.bookDescription"  required >
+
+                                <br>
+                          
+                                <button class="btn btn-success" (click)="update(b)">Save</button>
+
+                                <button class="btn btn-danger" (click)="delete(b)">Delete</button>
+                            </div>
+                            </div>
+                            </div>
+                </ng-container>
+                
+        </ng-container>
+        </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+

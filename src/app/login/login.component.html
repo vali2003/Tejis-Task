@@ -1,0 +1,31 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4" id="fm">
+            <form action="" (ngSubmit)="login()" ngNativeValidate>
+                <h2>login page</h2>
+                <div class="form-group">
+                    <label class="form-label">UserName</label>
+                    <input type="text" class=form-control name="name" [(ngModel)]="loginusername" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Password</label>
+                    <input type="password" class=form-control name="name" [(ngModel)]="loginuserpassword" required>
+                </div>
+                <div>
+                     <button class="btn btn-info btn-lg" type="submit">Login</button>
+                     <button class="btn btn-warning btn-lg" type="reset">Cancel</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-2"></div>
+       <div class="col-md-4">
+       </div>
+        <!-- <div class="col-md-4" id="new">
+            <app-registration></app-registration>
+        </div>  -->
+        <button id="reg" (click)="load()">Create a  account click</button>
+    </div>
+</div>
+
+

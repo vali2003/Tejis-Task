@@ -1,0 +1,27 @@
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3 dash">
+            <nav class="navbar navbar-expand-md  navbar-dark bg-vali  flex-md-column  align-items-start">
+                <a class="navbar-brand">dashboard <br>
+                </a>
+                <button class="navbar-toggler" type="submit" data-bs-toggle="collapse" data-bs-target="#sidebar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="sidebar">
+                        <ul class="navbar-nav flex-md-column w-100 justify-content-between">
+                            <li class="nav-item"><a routerLink="/admin/home" class="nav-link">View stor</a></li>
+                            <li class="nav-item"><a routerLink="/admin/add" class="nav-link">Add Book form</a></li>
+                            <li class="nav-item"><a routerLink="/admin/manage" class="nav-link">Manage Data</a></li>
+                            <li class="nav-item"><a routerLink="/" class="nav-link">Log-out</a></li>
+    
+                        </ul>
+                </div>
+            </nav>     
+        </div>
+        <div class="col-md-9 cont">
+            <router-outlet></router-outlet>
+        </div>
+    
+    </div>
+    </div>
